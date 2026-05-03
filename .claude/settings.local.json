@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import numpy, sympy, pytest; print\\(numpy.__version__, sympy.__version__, pytest.__version__\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c \"import numpy\")",
+      "Bash(python -m pytest -x --tb=short)",
+      "Bash(python -m pytest --tb=short)",
+      "Bash(PYTHONIOENCODING=utf-8 python examples/01_linear_systems.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python examples/02_eigen.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python examples/04_decompositions.py)",
+      "Bash(python -m pytest -q)",
+      "Bash(pytest -q)"
+    ]
+  }
+}
